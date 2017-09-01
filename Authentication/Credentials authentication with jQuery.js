@@ -28,7 +28,7 @@ function getMyRecentlyViewedItems()
 		data: JSON.stringify({ "objCredentials": credentials}),
 		success: function (result)
 		{
-			alert(result.Items.length);
+			alert("Number of recent items: " + result.Items.length);
 		}
 	});
 }

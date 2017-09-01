@@ -22,7 +22,7 @@ function getAnonymousCollections()
 		data: JSON.stringify({ "objCredentials": credentials}),
 		success: function (result)
 		{
-			alert(result.Collections.length);
+			alert("Number of collections: " + result.Collections.length);
 		}
 	});
 }
