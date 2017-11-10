@@ -14,7 +14,7 @@ $(document).ajaxError(function( event, jqxhr, settings, thrownError ) {
  
 // Create token and call function to get the recently viewed content of a user
 $.ajax({
-    method: "GET",
+    method: "POST",
 	url: "http://iprova/externalapi/MyRecentlyViewedItems/MyRecentlyViewedItemsAPI.svc/web/GetTokenForUser",
     contentType: "application/json",
 	data: JSON.stringify({ "strTrustedApplicationID": _trustedApplicationID,"strLoginCode":_userName}),
@@ -35,13 +35,13 @@ function getMyRecentlyViewedItems()
 
 	// Get the recently viewed items of a user
 	$.ajax({
-		method: "GET",
+		method: "POST",
 		url: "http://iprova/externalapi/MyRecentlyViewedItems/MyRecentlyViewedItemsAPI.svc/web/GetMyRecentlyViewedItems",
 		contentType: "application/json",
 		data: JSON.stringify({ "objCredentials": credentials}),
 		success: function (result)
 		{
-			alert("Number of recent items: " + result.Items.length);
+			alert("Number of recent items: " + result.RecentlyViewedItems.length);
 		}
 	});
 }
