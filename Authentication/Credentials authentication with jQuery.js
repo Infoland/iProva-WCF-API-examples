@@ -22,7 +22,7 @@ function getMyRecentlyViewedItems()
 
 	// Get the recently viewed items of a user
 	$.ajax({
-		method: "GET",
+		method: "POST",
 		url: "http://iprova/externalapi/MyRecentlyViewedItems/MyRecentlyViewedItemsAPI.svc/web/GetMyRecentlyViewedItems",
 		contentType: "application/json",
 		data: JSON.stringify({ "objCredentials": credentials}),
