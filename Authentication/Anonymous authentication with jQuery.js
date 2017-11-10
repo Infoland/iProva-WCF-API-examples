@@ -16,7 +16,7 @@ function getAnonymousCollections()
 
 	// Get the collections of the anonymous user
 	$.ajax({
-		method: "GET",
+		method: "POST",
 		url: "http://iprova/externalapi/Portals/PortalsAPI.svc/web/GetCollections",
 		contentType: "application/json",
 		data: JSON.stringify({ "objCredentials": credentials}),
