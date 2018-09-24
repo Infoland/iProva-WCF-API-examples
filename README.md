@@ -16,3 +16,6 @@ var api = "https://iprova.yourcompany.nl/externalapi";
 There are two end points for each resource: one for SOAP and service references and one for JSON or web calls.
 
 The first is denoted by just the resource path: `http://iprova/externalapi/Portals/PortalsAPI.svc/GetTokenForUser`. The second is denoted by added `web` between the resource and the method: `http://iprova/externalapi/Portals/PortalsAPI.svc/web/GetTokenForUser`
+
+## More documentation
+Haven't found what you were looking for? More information can be found [here](https://webshare.iprova.nl/lmg7hpgbqrmp2n4o/DocumentList.aspx)
